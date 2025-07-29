@@ -16,10 +16,13 @@ app.use((req, res, next) => {
 
 app.post("/form", async (req, res) => {
   try {
-    const { fullname, phone, email, date, time, place, message } = req.body;
+    const { firstName, lastName, phone, email, message } = req.body;
 
-    if (checkValue(fullname)) {
-      return res.json({ success: false, message: "Full name is required" });
+    if (checkValue(firstName)) {
+      return res.json({ success: false, message: "First name is required" });
+    }
+    if (checkValue(lastName)) {
+      return res.json({ success: false, message: "Last name is required" });
     }
     if (checkValue(phone)) {
       return res.json({ success: false, message: "Phone number is required" });
@@ -27,26 +30,27 @@ app.post("/form", async (req, res) => {
     if (checkValue(email)) {
       return res.json({ success: false, message: "Email is required" });
     }
-    if (checkValue(date) || checkValue(time)) {
-      return res.json({
-        success: false,
-        message: "Date and time are required",
-      });
-    }
-    if (checkValue(place)) {
-      return res.json({ success: false, message: "Place is required" });
-    }
+    // if (checkValue(date) || checkValue(time)) {
+    //   return res.json({
+    //     success: false,
+    //     message: "Date and time are required",
+    //   });
+    // }
+    // if (checkValue(place)) {
+    //   return res.json({ success: false, message: "Place is required" });
+    // }
 
     // Send confirmation email
     const options = {
       to: email,
 
-      fullname,
+      firstName,
+      lastName,
       phone,
       email,
-      date,
-      time,
-      place,
+      // date,
+      // time,
+      // place,
       message,
     };
     await sentmail(options);

@@ -1,1522 +1,1029 @@
 <!DOCTYPE html>
+<html lang="zxx">
+<!-- Mirrored from html.awaikenthemes.com/fitwell/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 04 Jul 2025 07:03:42 GMT -->
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="Awaiken" />
+  <!-- Page Title -->
+  <title>Fitwell - Fitness and Gym HTML Template</title>
+  <!-- Favicon Icon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  <!-- Google Fonts Css-->
+  <link rel="preconnect" href="https://fonts.googleapis.com/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&amp;family=Rubik:ital,wght@0,300..900;1,300..900&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Bootstrap Css -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+  <!-- SlickNav Css -->
+  <link href="css/slicknav.min.css" rel="stylesheet" />
+  <!-- Swiper Css -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <!-- Font Awesome Icon Css-->
+  <link href="css/all.min.css" rel="stylesheet" media="screen" />
+  <!-- Animated Css -->
+  <link href="css/animate.css" rel="stylesheet" />
+  <!-- Magnific Popup Core Css File -->
+  <link rel="stylesheet" href="css/magnific-popup.css" />
+  <!-- Mouse Cursor Css File -->
+  <link rel="stylesheet" href="css/mousecursor.css" />
+  <!-- Main Custom Css -->
+  <link href="css/custom.css" rel="stylesheet" media="screen" />
+</head>
 
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+<body>
+  <!-- Preloader Start -->
+  <div class="preloader">
+    <div class="loading-container">
+      <div class="loading"></div>
+      <div id="loading-icon"><img src="images/loader.svg" alt="" /></div>
+    </div>
+  </div>
+  <!-- Preloader End -->
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Header Start -->
+  <header class="main-header">
+    <div class="header-sticky">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <!-- Logo Start -->
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.svg" alt="Logo" />
+          </a>
+          <!-- Logo End -->
 
-    <!-- Page Title -->
+          <!-- Main Menu Start -->
+          <div class="collapse navbar-collapse main-menu">
+            <div class="nav-menu-wrapper">
+              <ul class="navbar-nav mr-auto" id="menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#service">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="franchise.html">Franchise</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
 
-    <title>Briyaniboss</title>
-
-    <!-- Favicon -->
-
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="assets/img/biriyaniboss.png"
-    />
-
-    <!-- Google Fonts -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com/" />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Syne:wght@400..800&amp;display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- CSS Files -->
-
-    <!--==== Bootstrap css file ====-->
-
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-
-    <!--==== Font-Awesome css file ====-->
-
-    <link rel="stylesheet" href="assets/css/all.min.css" />
-
-    <!--==== Swiper ====-->
-
-    <link rel="stylesheet" href="assets/plugins/swiper/swiper-bundle.min.css" />
-
-    <!--==== Slick ====-->
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="assets/plugins/slick/slick.css"
-    />
-
-    <!--==== glightbox ====-->
-
-    <link
-      rel="stylesheet"
-      href="assets/plugins/glightbox/css/glightbox.min.css"
-    />
-
-    <!--==== Aos ====-->
-
-    <link href="assets/plugins/aos/aos.css" rel="stylesheet" />
-
-    <!--==== Style css file ====-->
-
-    <link rel="stylesheet" href="assets/css/style.css" />
-
-    <link rel="stylesheet" href="assets/css/header-one.css" />
-
-    <!--==== Responsive css file ====-->
-
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-  </head>
-
-  <body class="home-page-one">
-    <!-- Cursor -->
-    <style>
-      .trail-steam {
-        position: fixed;
-        pointer-events: none;
-        width: 30px;
-        height: 8px;
-        border-radius: 50%;
-        background: linear-gradient(
-          to right,
-          rgba(255, 255, 255, 0.15),
-          rgba(255, 255, 255, 0)
-        );
-        opacity: 0.5;
-        transform: rotate(20deg) scale(1);
-        transition: opacity 1.2s ease, transform 1.2s ease;
-        will-change: opacity, transform;
-        z-index: 9999;
-      }
-    </style>
-    <script>
-      document.addEventListener("mousemove", (e) => {
-        const steam = document.createElement("div");
-        steam.className = "trail-steam";
-        steam.style.left = `${e.pageX - 15}px`;
-        steam.style.top = `${e.pageY - 4}px`;
-        document.body.appendChild(steam);
-
-        setTimeout(() => {
-          steam.style.opacity = "0";
-          steam.style.transform = "rotate(40deg) scale(0.5)";
-        }, 10);
-
-        setTimeout(() => {
-          steam.remove();
-        }, 1500);
-      });
-    </script>
-
-    <!--End Cursor -->
-
-    <!-- Preloader -->
-
-    <div id="preloader"></div>
-
-    <!--End  Preloader -->
-
-    <!-- Main header -->
-
-    <header class="header-one fixed-top" id="header">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"
-            ><img src="assets/img/biriyaniboss.png" alt="logo"
-          /></a>
-
-          <button
-            class="navbar-toggler collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link"
-                  href="index.html"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Home
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About Us</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#menu">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#blog">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact Us</a>
-              </li>
-            </ul>
-
-            <a href="tel:+918098333345" class="phone-btn"
-              ><i class="fas fa-phone-alt"></i
-            ></a>
+            <!-- Header Btn Start -->
+            <div class="header-btn">
+              <a href="contact.html#contactForm" class="btn-default">Get Started</a>
+            </div>
+            <!-- Header Btn End -->
           </div>
+          <!-- Main Menu End -->
+          <div class="navbar-toggle"></div>
         </div>
       </nav>
-    </header>
+      <div class="responsive-menu"></div>
+    </div>
+  </header>
 
-    <!-- End of Main header -->
+  <!-- Header End -->
 
-    <main>
-      <!-- Banner section -->
-
-      <section class="banner-one position-relative" id="hero">
-        <img
-          src="assets/img/arrow-icon.png"
-          alt="vector"
-          class="arrow-icon"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        />
-
-        <div class="rotet">
-          <img src="assets/img/vector-icon-14.svg" alt="" class="center-icon" />
-        </div>
-
-        <img
-          src="assets/img/vector-icon-16.svg"
-          alt="vector"
-          class="left-icon"
-          data-aos="fade-left"
-          data-aos-delay="700"
-        />
-
-        <div class="container-fluid">
-          <div class="row">
-            <div
-              class="col-lg-7 col-md-6"
-              data-aos="fade-right"
-              data-aos-delay="100"
-            >
-              <div class="banner-detail">
-                <div class="banner-text">
-                  <h5
-                    class="font-thank-you"
-                    style="color: #e39105"
-                    data-aos="fade-down"
-                  >
-                    Welcome To Briyani Boss
-                  </h5>
-
-                  <h1 data-aos="zoom-in-up" style="color: white">
-                    Indulge in
-                    <span style="color: #e39105">Authentic</span> Briyani
-                    Delights!
-                  </h1>
-
-                  <div class="banner-sub-text">
-                    <p
-                      data-aos="fade-up"
-                      data-aos-delay="200"
-                      style="color: white"
-                    >
-                      Experience the royal taste of hand-crafted briyani, cooked
-                      with tradition and bursting with unforgettable flavors.
-                    </p>
-
-                    <div data-aos="zoom-in" data-aos-delay="900">
-                      <a href="#contact" class="primary-btn"
-                        ><span>Order Now</span></a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
+  <!-- Hero Section Start -->
+  <div class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <!-- Hero Content Start -->
+          <div class="hero-content">
+            <!-- Section Title Start -->
+            <div class="section-title dark-section">
+              <h1 class="text-anime-style-2" data-cursor="-opaque">
+                FITNESS FOUR: <span>Empowering Entrepreneurs,</span> Elevating
+                Fitness.
+              </h1>
+              <p class="wow fadeInUp">
+                Own a World-Class Gym. Your Path to Entrepreneurship Starts
+                Here.
+              </p>
             </div>
+            <!-- Section Title End -->
 
-            <div
-              class="col-lg-5 col-md-6 position-relative"
-              data-aos="fade-left"
-              data-aos-delay="100"
-            >
-              <div class="banner-right-img" data-aos="zoom-in-up">
-                <img src="assets/img/home-one-hero-imgs.png" alt="banner" />
+            <!-- Hero Counter Box Start -->
+            <div class="hero-counter-box">
+              <!-- Hero Counter Item Start -->
+              <div class="hero-counter-item">
+                <h3><span class="counter">1200</span>+</h3>
+                <p>Active Members</p>
               </div>
+              <!-- Hero Counter Item End -->
 
-              <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-                <div class="d-flex">
-                  <img
-                    src="assets/img/chana-masala-vector.png"
-                    alt="vector"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                  />
-
-                  <div
-                    class="box-title"
-                    data-aos="fade-right"
-                    data-aos-delay="400"
-                  >
-                    <h5 style="color: white">Signature Dum Briyani</h5>
-
-                    <span style="color: white"
-                      >4.8<i style="color: white" class="fas fa-star"></i
-                    ></span>
-                  </div>
-                </div>
-
-                <p data-aos="fade-up" data-aos-delay="500" style="color: white">
-                  Dive into the rich aroma and bold spices of our Signature Dum
-                  Briyani — a fragrant, slow-cooked masterpiece that brings
-                  people together at every bite.
-                </p>
+              <!-- Hero Counter Item Start -->
+              <div class="hero-counter-item">
+                <h3><span class="counter">12</span>+</h3>
+                <p>Certified Trainers</p>
               </div>
+              <!-- Hero Counter Item End -->
+
+              <!-- Hero Counter Item Start -->
+              <div class="hero-counter-item">
+                <h3><span class="counter">20</span>+</h3>
+                <p>Year Of Experience</p>
+              </div>
+              <!-- Hero Counter Item End -->
             </div>
+            <!-- Hero Counter Box End -->
+
+            <!-- Hero Button Start -->
+            <div class="hero-btn wow fadeInUp" data-wow-delay="0.2s">
+              <a href="contact.html#contactForm" class="btn-default">Join Our Franchise</a>
+              <a href="#about" class="btn-default btn-highlighted">Learn More</a>
+            </div>
+            <!-- Hero Button End -->
           </div>
+          <!-- Hero Content End -->
         </div>
-      </section>
 
-      <!-- End of Banner section -->
-      <section class="about-us" id="about">
-        <div class="container">
-          <div
-            class="row about-info align-items-center justify-content-between"
-          >
-            <div class="banner-img" data-aos="fade-right" data-aos-delay="500">
-              <img
-                src="assets/img/about-banner-img.png"
-                alt="About Briyani Boss"
-              />
+        <div class="col-lg-6">
+          <!-- Hero Image Start -->
+          <div class="hero-image">
+            <!-- Hero Img Start -->
+            <div class="hero-img">
+              <img src="images/hero-img.png" alt="" />
             </div>
+            <!-- Hero Img End -->
 
-            <div class="about-detail" data-aos="fade-left" data-aos-delay="600">
-              <h6>About Us</h6>
+            <!-- Expertise Circle Start -->
+            <div class="expertise-circle">
+              <img src="images/expertise-circle.png" alt="" />
+            </div>
+            <!-- Expertise Circle End -->
+          </div>
+          <!-- Hero Image End -->
+        </div>
+      </div>
+    </div>
+  </div>
 
-              <h3 style="color: white">
-                Authentic Taste, Unmatched Aroma —
-                <span style="color: #e39105">Briyani Boss</span> in Madipakkam
+  <!-- Hero Section End -->
+
+  <!-- Scrolling Ticker Section Start -->
+  <div class="our-scrolling-ticker">
+    <!-- Scrolling Ticker Start -->
+    <div class="scrolling-ticker-box">
+      <div class="scrolling-content">
+        <span><img src="images/star-icon.svg" alt="" />personal trainers</span>
+        <span><img src="images/star-icon.svg" alt="" />live classes</span>
+        <span><img src="images/star-icon.svg" alt="" />outdoor & online
+          trainers</span>
+        <span><img src="images/star-icon.svg" alt="" />personal training</span>
+        <span><img src="images/star-icon.svg" alt="" />live classes</span>
+        <span><img src="images/star-icon.svg" alt="" />personal trainers</span>
+        <span><img src="images/star-icon.svg" alt="" />personal trainers</span>
+        <span><img src="images/star-icon.svg" alt="" />live classes</span>
+        <span><img src="images/star-icon.svg" alt="" />outdoor & online
+          trainers</span>
+        <span><img src="images/star-icon.svg" alt="" />personal training</span>
+        <span><img src="images/star-icon.svg" alt="" />live classes</span>
+        <span><img src="images/star-icon.svg" alt="" />personal trainers</span>
+      </div>
+
+      <div class="scrolling-content">
+        <span><img src="images/star-icon.svg" alt="" />personal trainers</span>
+        <span><img src="images/star-icon.svg" alt="" />live classes</span>
+        <span><img src="images/star-icon.svg" alt="" />outdoor & online
+          trainers</span>
+        <span><img src="images/star-icon.svg" alt="" />personal training</span>
+        <span><img src="images/star-icon.svg" alt="" />live classes</span>
+        <span><img src="images/star-icon.svg" alt="" />personal trainers</span>
+        <span><img src="images/star-icon.svg" alt="" />personal trainers</span>
+        <span><img src="images/star-icon.svg" alt="" />live classes</span>
+        <span><img src="images/star-icon.svg" alt="" />outdoor & online
+          trainers</span>
+        <span><img src="images/star-icon.svg" alt="" />personal training</span>
+        <span><img src="images/star-icon.svg" alt="" />live classes</span>
+        <span><img src="images/star-icon.svg" alt="" />personal trainers</span>
+      </div>
+    </div>
+    <!-- Scrolling Ticker End -->
+  </div>
+  <!-- Scrolling Ticker Section End -->
+
+  <!-- About Us Section Start -->
+  <div class="about-us" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <!-- About Us Images Start -->
+          <div class="about-us-images">
+            <!-- About Image 1 Start -->
+            <div class="about-img-1">
+              <figure class="image-anime reveal">
+                <img src="images/about-img-1.jpg" alt="" />
+              </figure>
+            </div>
+            <!-- About Image 1 End -->
+
+            <!-- About Image 2 Start -->
+            <div class="about-img-2">
+              <figure class="image-anime reveal">
+                <img src="images/about-img-2.jpg" alt="" />
+              </figure>
+            </div>
+            <!-- About Image 2 End -->
+
+            <!-- About Image 3 Start -->
+            <div class="about-img-3">
+              <figure class="image-anime reveal">
+                <img src="images/about-img-3.jpg" alt="" />
+              </figure>
+            </div>
+            <!-- About Image 3 End -->
+          </div>
+          <!-- About Us Images End -->
+        </div>
+
+        <div class="col-lg-6">
+          <!-- About Us Content Start -->
+          <div class="about-us-content">
+            <!-- Section Title Start -->
+            <div class="section-title">
+              <div class="section-bg-title wow fadeInUp">
+                <span>about us</span>
+              </div>
+              <h3 class="wow fadeInUp" data-wow-delay="0.2s">
+                About FITNESS FOUR
               </h3>
-
-              <p style="color: white">
-                Located in the heart of Madipakkam, Chennai, Briyani Boss is
-                your destination for premium, flavorful biryani made with
-                traditional spices and handpicked ingredients. Whether it's a
-                casual lunch or a family feast, our biryani is crafted to bring
-                people together through taste and tradition. Every pot is cooked
-                with passion, ensuring consistent quality and irresistible aroma
-                in every bite.
-                <br /><br />
-                <strong style="color: #e39105"
-                  >We also specialize in Corporate Catering and Party
-                  Orders</strong
-                >
-                — perfect for offices, events, and celebrations of any scale!
+              <h2 class="text-anime-style-2" data-cursor="-opaque">
+                The Future of Fitness, <span>Powered by Experience</span>
+              </h2>
+              <p class="wow fadeInUp" data-wow-delay="0.4s">
+                <span class="wow fadeInUp yellow">FITNESS FOUR</span> is the
+                visionary new gym brand under the umbrella of FUEL AND FLEX
+                PRIVATE LIMITED. With over two decades of expertise in the
+                industry, our parent company, Deshna Group, has built a
+                diverse and successful portfolio encompassing renowned
+                ventures in salon and beauty services and notably, fitness and
+                gym services. This rich and proven background in lifestyle and
+                wellness forms the solid bedrock of FITNESS FOUR. Our core
+                mission at FITNESS FOUR is to deliver world-class fitness
+                facilities, cutting-edge equipment, and expert guidance that
+                is truly accessible to all, irrespective of location. We
+                believe that premium fitness experiences shouldn't be confined
+                to metropolitan hubs. We meticulously design inspiring spaces
+                that empower every member to discover and achieve their
+                personal path to a healthier, stronger self.
               </p>
-
-              <div class="service d-flex justify-content-between">
-                <div class="service-link">
-                  <a href="#services" style="color: white"
-                    ><img src="assets/img/right-arrow.png" alt="" />Variety of
-                    Signature Biryani</a
-                  >
-
-                  <a href="#services" style="color: white"
-                    ><img src="assets/img/right-arrow.png" alt="" />Online
-                    Ordering & Delivery</a
-                  >
-                </div>
-
-                <div class="service-link">
-                  <a href="#services" style="color: white"
-                    ><img src="assets/img/right-arrow.png" alt="" />Bulk & Party
-                    Orders</a
-                  >
-
-                  <a href="#services" style="color: white"
-                    ><img src="assets/img/right-arrow.png" alt="" />Corporate
-                    Catering Solutions</a
-                  >
-                </div>
-              </div>
-
-              <div class="about-btn" data-aos="zoom-in" data-aos-delay="1100">
-                <a href="#services" class="primary-btn"
-                  ><span>Our Services</span></a
-                >
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
+            <!-- Section Title End -->
 
-      <!-- Our Services -->
-
-      <section
-        class="our-services-one position-relative"
-        id="services"
-        data-aos="fade-in"
-      >
-        <div class="container">
-          <img
-            class="area-img-left"
-            src="assets/img/vector-icon-01.png"
-            alt="food"
-            data-aos="fade-right"
-            data-aos-delay="200"
-          />
-          <img
-            class="area-img-right"
-            src="assets/img/vector-icon-02.png"
-            alt="food"
-            data-aos="fade-left"
-            data-aos-delay="200"
-          />
-
-          <div class="main-title" data-aos="fade-up" data-aos-delay="100">
-            <h3>
-              <img
-                src="assets/img/left-leaf-icon.svg"
-                alt="leaf"
-                data-aos="zoom-in"
-                data-aos-delay="300"
-              />
-              Our Services
-              <img
-                src="assets/img/right-leaf-Icon.svg"
-                alt="leaf"
-                data-aos="zoom-in"
-                data-aos-delay="300"
-              />
-            </h3>
-            <h2 style="color: white">Signature Briyani Experience</h2>
-          </div>
-
-          <div class="row">
-            <!-- 1. Authentic Taste -->
-            <div
-              class="col-lg-3 col-sm-6"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="services-box">
-                <img
-                  src="assets/img/services-icon-1.svg"
-                  alt="Food-icon"
-                  data-aos="zoom-in"
-                  data-aos-delay="300"
-                />
-                <h6 style="color: white">Authentic Taste</h6>
-                <p style="color: white">
-                  Enjoy royal flavors in every bite with our hand-crafted dum
-                  briyanis, made using traditional recipes and premium spices.
+            <!-- About Us Body Start -->
+            <div class="about-us-body wow fadeInUp" data-wow-delay="0.6s">
+              <!-- About Us Body Item Start -->
+              <div class="about-us-body-item">
+                <h3>Expertise You Can Trust</h3>
+                <p>
+                  Backed by Deshna Group’s 20+ years of proven success in the
+                  fitness and lifestyle industry.
                 </p>
-                <a href="#services" style="color: white"
-                  >Learn More <i class="fas fa-arrow-right"></i
-                ></a>
               </div>
-            </div>
+              <!-- About Us Body Item End -->
 
-            <!-- 2. Hot & Fast Delivery -->
-            <div
-              class="col-lg-3 col-sm-6"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="services-box">
-                <img
-                  src="assets/img/services-icon-2.svg"
-                  alt="Food-icon"
-                  data-aos="zoom-in"
-                  data-aos-delay="400"
-                />
-                <h6 style="color: white">Hot & Fast Delivery</h6>
-                <p style="color: white">
-                  Get steaming hot briyani delivered swiftly to your doorstep,
-                  preserving its aroma, freshness, and warmth every time.
+              <!-- About Us Body Item Start -->
+              <div class="about-us-body-item">
+                <h3>World-Class Facilities</h3>
+                <p>
+                  Equipped with cutting-edge machines and a carefully crafted
+                  fitness environment.
                 </p>
-                <a href="#services" style="color: white"
-                  >Learn More <i class="fas fa-arrow-right"></i
-                ></a>
               </div>
-            </div>
+              <!-- About Us Body Item End -->
 
-            <!-- 3. Fresh Ingredients -->
-            <div
-              class="col-lg-3 col-sm-6"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="services-box">
-                <img
-                  src="assets/img/services-icon-3.svg"
-                  alt="Food-icon"
-                  data-aos="zoom-in"
-                  data-aos-delay="500"
-                />
-                <h6 style="color: white">Fresh Ingredients</h6>
-                <p style="color: white">
-                  We use farm-fresh vegetables, tender meat, and high-grade rice
-                  to craft every briyani — ensuring premium taste and quality.
+              <!-- About Us Body Item Start -->
+              <div class="about-us-body-item">
+                <h3>Inclusive Reach</h3>
+                <p>
+                  Bringing premium gym experiences to all cities—not just
+                  metro locations.
                 </p>
-                <a href="#services" style="color: white"
-                  >Learn More <i class="fas fa-arrow-right"></i
-                ></a>
               </div>
-            </div>
+              <!-- About Us Body Item End -->
 
-            <!-- 4. Corporate & Party Orders -->
-            <div
-              class="col-lg-3 col-sm-6"
-              data-aos="fade-up"
-              data-aos-delay="500"
-            >
-              <div class="services-box">
-                <img
-                  src="assets/img/right-leaf-Icon.svg"
-                  alt="Party Orders Icon"
-                  data-aos="zoom-in"
-                  data-aos-delay="600"
-                />
-                <h6 style="color: white">Corporate & Party Orders</h6>
-                <p style="color: white">
-                  Hosting an event? We provide bulk biryani orders for corporate
-                  functions, celebrations, and gatherings — freshly packed and
-                  delivered on time.
+              <!-- About Us Body Item Start -->
+              <div class="about-us-body-item">
+                <h3>Empowering Wellness</h3>
+                <p>
+                  Designed to help you pursue your personal path to a
+                  healthier, stronger self.
                 </p>
-                <a href="#contact" style="color: white"
-                  >Enquire Now <i class="fas fa-arrow-right"></i
-                ></a>
               </div>
+              <!-- About Us Body Item End -->
             </div>
+            <!-- About Us Body End -->
+
+            <!-- About Contact Button Start -->
+            <div class="about-us-btn wow fadeInUp" data-wow-delay="0.8s">
+              <a href="#about" class="btn-default">more about us</a>
+            </div>
+            <!-- About Contact Button End -->
           </div>
+          <!-- About Us Content End -->
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+  <!-- About Us Section End -->
 
-      <!-- End of Our Services -->
+  <!-- Our Services Section End -->
 
-      <!-- our specialties section -->
-
-      <section class="specialties-one" id="slider">
-        <div class="container-fluid px-0">
-          <div
-            class="specialties-slider-div position-relative"
-            data-aos="fade-up"
-          >
-            <div class="row g-0 specialties-slider">
-              <div class="col-lg-6 specialties-item">
-                <div class="specialties-slider-detail">
-                  <div class="specialties-img">
-                    <img
-                      src="assets/img/biriyani-01.png"
-                      alt="Chicken Biryani"
-                    />
-                  </div>
-
-                  <div class="specialties-content position-relative">
-                    <h3 style="color: white">Chef’s Special</h3>
-                    <h2 style="color: white">Hyderabadi Chicken Biryani</h2>
-
-                    <p style="color: white">
-                      Savor our signature Hyderabadi Chicken Biryani —
-                      long-grain basmati rice layered with tender marinated
-                      chicken, slow-cooked to perfection with aromatic spices,
-                      saffron, and fried onions. A true royal treat from the
-                      kitchens of Briyani Boss.
-                    </p>
-
-                    <img src="assets/img/vector-icon-04.svg" alt="vector" />
-                  </div>
-                </div>
+  <!-- Why Choose Us Section Start -->
+  <div class="why-choose-us" id="service">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <!-- Why Choose Content Start -->
+          <div class="why-choose-content">
+            <!-- Section Title Start -->
+            <div class="section-title section-title-center">
+              <div class="section-bg-title wow fadeInUp">
+                <span>franchise</span>
               </div>
-
-              <div class="col-lg-6 specialties-item">
-                <div class="specialties-slider-detail">
-                  <div class="specialties-img">
-                    <img
-                      src="assets/img/biriyani-03.png"
-                      alt="Mutton Biryani"
-                    />
-                  </div>
-
-                  <div class="specialties-content position-relative">
-                    <h3 style="color: white">Weekend Favorite</h3>
-                    <h2 style="color: white">Madras Mutton Biryani</h2>
-
-                    <p style="color: white">
-                      Dive into the rich taste of Madras Mutton Biryani — spicy,
-                      bold, and irresistibly aromatic. This Chennai-style
-                      biryani is a local favorite, featuring succulent mutton
-                      chunks cooked with flavorful masalas and traditional
-                      techniques.
-                    </p>
-
-                    <img src="assets/img/vector-icon-03.svg" alt="vector" />
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-6 specialties-item">
-                <div class="specialties-slider-detail">
-                  <div class="specialties-img">
-                    <img
-                      src="assets/img/biriyani-04.png"
-                      alt="Grilled Chicken"
-                    />
-                  </div>
-
-                  <div class="specialties-content position-relative">
-                    <h3 style="color: white">Street Style</h3>
-                    <h2 style="color: white">Spicy Grilled Chicken</h2>
-
-                    <p style="color: white">
-                      Smoky, spicy, and juicy — our Grilled Chicken is marinated
-                      in a special spice blend and char-grilled to perfection.
-                      Served with lemon and mint chutney, it’s a must-try for
-                      meat lovers in Madipakkam!
-                    </p>
-
-                    <img src="assets/img/vector-icon-04.svg" alt="vector" />
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-6 specialties-item">
-                <div class="specialties-slider-detail">
-                  <div class="specialties-img">
-                    <img src="assets/img/biriyani-02.png" alt="Veg Biryani" />
-                  </div>
-
-                  <div class="specialties-content position-relative">
-                    <h3 style="color: white">Non-Vegetarian Delight</h3>
-                    <h2 style="color: white">Chicken Dum Biryani</h2>
-
-                    <p style="color: white">
-                      A rich and flavorful option for vegetarians — soft paneer
-                      cubes layered with fragrant biryani rice and cooked on dum
-                      with herbs, saffron, and ghee. A treat that doesn’t
-                      compromise on taste or aroma.
-                    </p>
-
-                    <img src="assets/img/vector-icon-03.svg" alt="vector" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="custom-arrow d-flex">
-              <button class="prev">
-                <img src="assets/img/privous-arrow.png" alt="prev" />
-              </button>
-
-              <button class="next">
-                <img src="assets/img/next-arrow.png" alt="next" />
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- End of  our specialties section -->
-
-      <!-- Popular Foods section -->
-
-      <section class="popular-food-one position-relative" id="menu">
-        <img
-          class="popular-img-left"
-          src="assets/img/vector-icon-05.svg"
-          alt="food"
-          data-aos="fade-right"
-          data-aos-delay="100"
-        />
-        <img
-          class="popular-img-right"
-          src="assets/img/vector-icon-06.svg"
-          alt="food"
-          data-aos="fade-left"
-          data-aos-delay="100"
-        />
-
-        <div class="main-title" data-aos="fade-up" data-aos-delay="200">
-          <h3 style="color: #e39105">
-            <img src="assets/img/left-leaf-icon.svg" alt="leaf" />Our Popular
-            Foods<img src="assets/img/right-leaf-Icon.svg" alt="leaf" />
-          </h3>
-          <h2 style="color: white">Top Food Menu Selection</h2>
-        </div>
-
-        <div class="container">
-          <div class="row isotope-container">
-            <!-- Chicken Biriyani -->
-            <div
-              class="col-lg-3 col-md-4 col-6 portfolio-item isotope-item filter-fast-food"
-            >
-              <div class="item-box position-relative">
-                <img
-                  src="assets/img/masala-pasta-img01.png"
-                  alt="Chicken Biriyani"
-                />
-                <span>4.8<i class="fas fa-star"></i></span>
-                <h3>Chicken Biriyani</h3>
-                <div class="divider">
-                  <li>750ml - ₹150</li>
-                  <li>1500ml - ₹280</li>
-                </div>
-              </div>
-            </div>
-
-            <!-- Mutton Biriyani -->
-            <div
-              class="col-lg-3 col-md-4 col-6 portfolio-item isotope-item filter-fast-food"
-            >
-              <div class="item-box position-relative">
-                <img
-                  src="assets/img/masala-pasta-img02.png"
-                  alt="Mutton Biriyani"
-                />
-                <span>4.9<i class="fas fa-star"></i></span>
-                <h3>Mutton Biriyani</h3>
-                <div class="divider">
-                  <li>750ml - ₹260</li>
-                  <li>1500ml - ₹360</li>
-                </div>
-              </div>
-            </div>
-
-            <!-- Super Pack -->
-            <div
-              class="col-lg-3 col-md-4 col-6 portfolio-item isotope-item filter-fast-food"
-            >
-              <div class="item-box position-relative">
-                <img
-                  src="assets/img/masala-pasta-img01.png"
-                  alt="Bucket Biriyani"
-                />
-                <span>4.7<i class="fas fa-star"></i></span>
-                <h3>Bucket Biriyani - Super Pack</h3>
-                <div class="divider">
-                  <li>Chicken - ₹1450 (4 to 5 Servings)</li>
-                  <li>Mutton - ₹1750 (4 to 5 Servings)</li>
-                </div>
-              </div>
-            </div>
-
-            <!-- Standard Pack -->
-            <div
-              class="col-lg-3 col-md-4 col-6 portfolio-item isotope-item filter-fast-food"
-            >
-              <div class="item-box position-relative">
-                <img
-                  src="assets/img/masala-pasta-img02.png"
-                  alt="Bucket Biriyani"
-                />
-                <span>4.8<i class="fas fa-star"></i></span>
-                <h3>Bucket Biriyani - Standard Pack</h3>
-                <div class="divider">
-                  <li>Chicken - ₹2400 (8 to 9 Servings)</li>
-                  <li>Mutton - ₹3200 (8 to 9 Servings)</li>
-                </div>
-              </div>
-            </div>
-
-            <!-- Chicken 65 -->
-            <div
-              class="col-lg-3 col-md-4 col-6 portfolio-item isotope-item filter-snack-foods"
-            >
-              <div class="item-box position-relative">
-                <img src="assets/img/masala-pasta-img03.png" alt="Chicken 65" />
-                <span>4.6<i class="fas fa-star"></i></span>
-                <h3>Chicken 65</h3>
-                <div class="divider">
-                  <li>Only ₹150</li>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="viwe-more-btn" data-aos="fade-up" data-aos-delay="900">
-            <a href="#menu" class="primary-btn"><span>View More</span></a>
-          </div>
-        </div>
-      </section>
-
-      <!-- End of Popular Foods section -->
-
-      <!-- Table Reservation section -->
-
-      <!-- <section class="table-reservation-one position-relative">
-        <div class="container">
-          <img
-            src="assets/img/vector-icon-07.svg"
-            class="table-left"
-            alt="food"
-            data-aos="fade-left"
-            data-aos-delay="100"
-          />
-
-          <div class="row table-slider">
-            <div
-              class="col-lg-4 col-md-6 px-0"
-              data-aos="fade-right"
-              data-aos-delay="200"
-            >
-              <img
-                src="assets/img/time-table.jpg"
-                alt="time-table"
-                class="time-table"
-              />
-            </div>
-
-            <div
-              class="col-lg-8 px-0 table-box"
-              data-aos="fade-left"
-              data-aos-delay="300"
-            >
-              <div class="main-title" data-aos="fade-up" data-aos-delay="400">
-                <h2>Table Reservation Now!</h2>
-              </div>
-
-              <div class="row g-0 justify-content-between">
-                <div
-                  class="col-lg-6 col-md-6 px-0"
-                  data-aos="flip-up"
-                  data-aos-delay="500"
-                >
-                  <div
-                    class="bg-box-one d-flex align-items-end justify-content-center"
-                  >
-                    <h3>Paneer Jalfrezi________</h3>
-
-                    <p>$20</p>
-                  </div>
-                </div>
-
-                <div
-                  class="col-lg-6 col-md-6 px-0"
-                  data-aos="flip-up"
-                  data-aos-delay="600"
-                >
-                  <div
-                    class="bg-box-two d-flex align-items-end justify-content-center"
-                  >
-                    <h3>Baingan Bharta________</h3>
-
-                    <p>$25</p>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="col-lg-12 col-md-12"
-                data-aos="zoom-in-up"
-                data-aos-delay="700"
-              >
-                <div class="bg-box-three book-table">
-                  <a href="#contact" class="primary-btn"
-                    ><span>Book Table</span></a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <!-- End of Table Reservation section -->
-
-      <!-- Food Reviews section -->
-
-      <section class="food-reviews-one">
-        <div class="container-md position-relative">
-          <img
-            class="food-reviews-left"
-            src="assets/img/vector-icon-08.svg"
-            alt="food"
-          />
-
-          <div class="main-title" data-aos="fade-up" data-aos-delay="200">
-            <h3 style="color: #e39105">
-              <img src="assets/img/left-leaf-icon.svg" alt="leaf" />Food
-              Reviews<img src="assets/img/right-leaf-Icon.svg" alt="leaf" />
-            </h3>
-
-            <h2 style="color: white">Chennai Customer Reviews</h2>
-          </div>
-
-          <div class="row reviews">
-            <div class="col-12 review-slide">
-              <p style="color: white">
-                “The biryani here is absolutely amazing! The aroma and taste are
-                just perfect. It’s become our family’s weekend tradition to eat
-                here. Highly recommended for food lovers in Chennai.”
+              <h3 class="wow fadeInUp" data-wow-delay="0.2s">
+                the franchise opportunity
+              </h3>
+              <h2 class="text-anime-style-2" data-cursor="-opaque">
+                Your Opportunity: Transform into a
+                <span>Successful Entrepreneur</span> with FITNESS FOUR
+              </h2>
+              <p class="wow fadeInUp" data-wow-delay="0.4s">
+                Franchising with FITNESS FOUR offers a unique opportunity that
+                extends far beyond traditional business ownership. It's a
+                dedicated platform specifically designed to convert salaried
+                professionals into successful entrepreneurs. We understand the
+                aspirations of those looking to transition from stable careers
+                to impactful business ventures. Leveraging Deshna Group's
+                extensive and proven track record in scaling successful
+                businesses, we provide a structured, supportive pathway for
+                this transition.
               </p>
-              <div class="quote">
-                <img src="assets/img/quote-icon.svg" alt="quote" />
-              </div>
-              <div
-                class="author d-flex justify-content-center align-items-center"
-              >
-                <img src="assets/img/author-icon-1.png" alt="author" />
-                <h3 style="color: #e39105">Ramesh Kumar – T. Nagar</h3>
-              </div>
             </div>
+            <!-- Section Title End -->
 
-            <div class="col-12 review-slide">
-              <p style="color: white">
-                “Excellent taste and quick service! The spice levels were
-                perfect and the mutton gravy was rich and flavorful. Definitely
-                one of the best spots I’ve visited in Velachery.”
-              </p>
-              <div class="quote">
-                <img src="assets/img/quote-icon.svg" alt="quote" />
-              </div>
-              <div
-                class="author d-flex justify-content-center align-items-center"
-              >
-                <img src="assets/img/author-icon-1.png" alt="author" />
-                <h3 style="color: #e39105">Divya Shree – Velachery</h3>
-              </div>
-            </div>
-
-            <div class="col-12 review-slide">
-              <p style="color: white">
-                “They even prepared my favorite Sapota juice on request – that’s
-                great customer care! The ambiance is calm and clean. Loved the
-                overall dining experience.”
-              </p>
-              <div class="quote">
-                <img src="assets/img/quote-icon.svg" alt="quote" />
-              </div>
-              <div
-                class="author d-flex justify-content-center align-items-center"
-              >
-                <img src="assets/img/author-icon-1.png" alt="author" />
-                <h3 style="color: #e39105">Kavitha Rajan – Anna Nagar</h3>
-              </div>
-            </div>
-
-            <div class="col-12 review-slide">
-              <p style="color: white">
-                “This is my favorite place for authentic South Indian flavors
-                with a modern twist. The Chicken 65 was crispy, juicy, and just
-                the way we like it in Chennai. Will visit again soon!”
-              </p>
-              <div class="quote">
-                <img src="assets/img/quote-icon.svg" alt="quote" />
-              </div>
-              <div
-                class="author d-flex justify-content-center align-items-center"
-              >
-                <img src="assets/img/author-icon-1.png" alt="author" />
-                <h3 style="color: #e39105">Arun Prakash – Adyar</h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="arrow-icons">
-            <button class="left-arrow">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-
-            <button class="right-arrow">
-              <i class="fas fa-chevron-right"></i>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <!-- End of Food Reviews section -->
-
-      <!-- video section -->
-
-      <!-- <section class="video-section" data-aos="fade-up" data-aos-delay="100">
-        <div class="container-fluid px-0">
-          <div class="play-icon" data-aos="zoom-in" data-aos-delay="200">
-            <a
-              class="play-btn glightbox"
-              href="https://youtu.be/78z9wfm-Gtg?si=yA2lp5ezdj0Vh8Vq"
-            >
-            </a>
-          </div>
-        </div>
-      </section> -->
-
-      <!-- End of video section -->
-
-      <!-- Blog Section -->
-
-      <section
-        class="blog-one position-relative"
-        data-aos="fade-up"
-        data-aos-delay="100"
-        id="blog"
-      >
-        <div class="container">
-          <img
-            class="blog-right-img"
-            src="assets/img/vector-icon-09.svg"
-            alt="food"
-            data-aos="fade-left"
-            data-aos-delay="200"
-          />
-
-          <img
-            class="blog-bottom-img"
-            src="assets/img/vector-icon-10.svg"
-            alt="food"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          />
-
-          <img
-            class="blog-left-img"
-            src="assets/img/vector-icon-11.svg"
-            alt="food"
-            data-aos="fade-right"
-            data-aos-delay="400"
-          />
-
-          <div class="main-title" data-aos="zoom-in" data-aos-delay="500">
-            <h3>
-              <img src="assets/img/left-leaf-icon.svg" alt="leaf" />Latest
-              Articles<img src="assets/img/right-leaf-Icon.svg" alt="leaf" />
-            </h3>
-
-            <h2 style="color: white">Helpful Advice and Handy Tips</h2>
-          </div>
-
-          <div class="row">
-            <div
-              class="col-lg-4 col-md-4 col-sm-6"
-              data-aos="fade-up"
-              data-aos-delay="600"
-            >
-              <div class="blog-one-bg">
-                <div class="blog-box position-relative">
-                  <a href="#blog">Breakfast</a>
-
-                  <div class="blog-text">
-                    <h3 style="color: white">
-                      5 Quick & Healthy Breakfast Ideas to Kickstart Your Day
-                    </h3>
-
-                    <div class="div-border"></div>
-
-                    <div
-                      class="author-box d-flex justify-content-between align-items-center"
-                    >
-                      <div
-                        class="d-flex justify-content-center align-items-center"
-                      >
-                        <img src="assets/img/jerome-bell.png" alt="author" />
-
-                        <div class="author-text">
-                          <h4 style="color: white">Arun Raj</h4>
-                          <p style="color: white">Nutritionist & Chef</p>
-                        </div>
-                      </div>
-
-                      <h4 style="color: white">20 April</h4>
-                    </div>
-                  </div>
+            <!-- Why Choose Steps Start -->
+            <div class="why-choose-steps">
+              <!-- Why Choose Step Item Start -->
+              <div class="why-choose-step-item wow fadeInUp">
+                <div class="why-choose-step-no">
+                  <h2>01</h2>
                 </div>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-4 col-sm-6"
-              data-aos="fade-up"
-              data-aos-delay="700"
-            >
-              <div class="blog-two-bg">
-                <div class="blog-box position-relative">
-                  <a href="#blog" style="color: white">Dessert</a>
-
-                  <div class="blog-text">
-                    <h3 style="color: white">
-                      The Art of Perfecting Traditional South Indian Sweets
-                    </h3>
-
-                    <div class="div-border"></div>
-
-                    <div
-                      class="author-box d-flex justify-content-between align-items-center"
-                    >
-                      <div
-                        class="d-flex justify-content-center align-items-center"
-                      >
-                        <img src="assets/img/author-icon-1.png" alt="author" />
-
-                        <div class="author-text">
-                          <h4 style="color: white">Divya Lakshmi</h4>
-                          <p style="color: white">Pastry Expert</p>
-                        </div>
-                      </div>
-
-                      <h4 style="color: white">25 April</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-4 col-sm-6"
-              data-aos="fade-up"
-              data-aos-delay="800"
-            >
-              <div class="blog-three-bg">
-                <div class="blog-box position-relative">
-                  <a href="#blog" style="color: white">Lunch</a>
-
-                  <div class="blog-text">
-                    <h3 style="color: white">
-                      Budget-Friendly Lunch Recipes for Busy Weekdays
-                    </h3>
-
-                    <div class="div-border"></div>
-
-                    <div
-                      class="author-box d-flex justify-content-between align-items-center"
-                    >
-                      <div
-                        class="d-flex justify-content-center align-items-center"
-                      >
-                        <img src="assets/img/albert-flores.png" alt="author" />
-
-                        <div class="author-text">
-                          <h4 style="color: white">Karthik Suresh</h4>
-                          <p style="color: white">Food Blogger</p>
-                        </div>
-                      </div>
-
-                      <h4 style="color: white">28 April</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="more-article-btn" data-aos="zoom-in" data-aos-delay="900">
-            <a href="#blog" class="primary-btn"><span>More Articles</span></a>
-          </div>
-        </div>
-      </section>
-
-      <!-- End of Blog-Section  -->
-      <section class="contact-form" id="contact">
-        <div class="container">
-          <div class="row contect-form-div">
-            <div
-              class="col-lg-7"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-            >
-              <div class="table-info">
-                <div
-                  class="table-heding"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                >
-                  <h5>Send A Message</h5>
+                <div class="why-choose-step-content">
+                  <h3>Scalable Business Model</h3>
                   <p>
-                    Planning a visit or party? Send us your booking details
-                    below and we’ll get in touch with you shortly.
+                    An innovative business model optimized for growth in
+                    untapped and high-potential markets.
                   </p>
                 </div>
+              </div>
+              <!-- Why Choose Step Item End -->
 
-                <div
-                  class="table-form"
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                  data-aos-delay="100"
-                >
-                  <form action="#" method="post" id="bookingForm">
-                    <div class="form-inner">
-                      <!-- Name -->
-                      <div class="form-group">
-                        <div class="wrap-input-8">
-                          <input
-                            class="input"
-                            type="text"
-                            name="fullname"
-                            placeholder="Full Name"
-                            required
-                          />
-                          <span class="focus-border"><i></i></span>
-                        </div>
-                      </div>
-
-                      <!-- Phone & Email -->
-                      <div class="form-group d-flex form-box">
-                        <div class="first-box">
-                          <div class="wrap-input-8">
-                            <input
-                              class="input"
-                              type="tel"
-                              name="phone"
-                              placeholder="Phone Number"
-                              required
-                            />
-                            <span class="focus-border"><i></i></span>
-                          </div>
-                        </div>
-                        <div class="last-box">
-                          <div class="wrap-input-8">
-                            <input
-                              class="input"
-                              type="email"
-                              name="email"
-                              placeholder="Email Address"
-                              required
-                            />
-                            <span class="focus-border"><i></i></span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Date & Time -->
-                      <div class="form-group d-flex form-box">
-                        <div class="first-box">
-                          <div class="wrap-input-8">
-                            <input
-                              class="input"
-                              type="date"
-                              name="date"
-                              placeholder="Select Date"
-                              required
-                              style="appearance: none"
-                            />
-                            <span class="focus-border"><i></i></span>
-                          </div>
-                        </div>
-                        <div class="last-box">
-                          <div class="wrap-input-8">
-                            <input
-                              class="input"
-                              type="time"
-                              name="time"
-                              placeholder="Select Time"
-                              required
-                              style="appearance: none"
-                            />
-                            <span class="focus-border"><i></i></span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Place -->
-                      <div class="form-group">
-                        <div class="wrap-input-8">
-                          <input
-                            class="input"
-                            type="text"
-                            name="place"
-                            placeholder="Place (e.g., Madipakkam)"
-                            required
-                          />
-                          <span class="focus-border"><i></i></span>
-                        </div>
-                      </div>
-
-                      <!-- Message -->
-                      <div class="form-group">
-                        <div class="wrap-input-8">
-                          <textarea
-                            class="input"
-                            name="message"
-                            rows="4"
-                            placeholder="Your Message..."
-                          ></textarea>
-                          <span class="focus-border"><i></i></span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="book-table"
-                      data-aos="fade-up"
-                      data-aos-duration="1000"
-                      data-aos-delay="200"
-                    >
-                      <button class="primary-btn">
-                        <span>Book Table</span>
-                      </button>
-                    </div>
-                  </form>
+              <!-- Why Choose Step Item Start -->
+              <div class="why-choose-step-item wow fadeInUp" data-wow-delay="0.2s">
+                <div class="why-choose-step-no">
+                  <h2>02</h2>
+                </div>
+                <div class="why-choose-step-content">
+                  <h3>Comprehensive Support</h3>
+                  <p>
+                    End-to-end operational guidance to help you launch,
+                    manage, and scale your fitness business confidently.
+                  </p>
                 </div>
               </div>
-            </div>
+              <!-- Why Choose Step Item End -->
 
-            <div class="col-lg-5" data-aos="fade-left" data-aos-duration="1000">
-              <div class="table-right-img">
-                <img
-                  src="assets/img/contact-send-message.png"
-                  alt="Contact Us"
-                />
+              <!-- Why Choose Step Item Start -->
+              <div class="why-choose-step-item wow fadeInUp" data-wow-delay="0.4s">
+                <div class="why-choose-step-no">
+                  <h2>03</h2>
+                </div>
+                <div class="why-choose-step-content">
+                  <h3>Impactful & Profitable</h3>
+                  <p>
+                    Build your own legacy by fostering wellness in your
+                    community while achieving financial independence.
+                  </p>
+                </div>
               </div>
+              <!-- Why Choose Step Item End -->
             </div>
+            <!-- Why Choose Steps End -->
+
+            <!-- Call to Action Buttons Start -->
+            <div class="about-us-btn wow fadeInUp" data-wow-delay="0.6s">
+              <a href="franchise.html" class="btn-default">Explore the Opportunity</a>
+              <a href="contact.html#contactForm" class="btn-default btn-highlighted">Franchise Inquiry</a>
+            </div>
+            <!-- Call to Action Buttons End -->
           </div>
-        </div>
-      </section>
-
-      <!-- Map section -->
-
-      <section class="map">
-        <div class="container-fluid px-0">
-          <div class="map-overlay">
-            <iframe
-              class="d-block"
-              width="100%"
-              height="555"
-              scrolling="no"
-              loading="lazy"
-              style="border: 0"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.199519293112!2d80.207818!3d12.9590812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d86da108a0d%3A0xcae3d723c179fc2d!2sBIRIYANI%20BOSS!5e0!3m2!1sen!2sin!4v1751266793451!5m2!1sen!2sin"
-              data-aos="fade-in"
-              data-aos-delay="200"
-            >
-            </iframe>
-          </div>
-        </div>
-      </section>
-
-      <!-- End of Map section -->
-    </main>
-
-    <!-- Footer section -->
-
-    <footer class="footer">
-      <div class="container-md">
-        <div class="footer-link" data-aos="fade-in" data-aos-delay="100">
-          <div class="row justify-content-between">
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="footer-col">
-                <div class="footer-logo">
-                  <a href="index.html">
-                    <img
-                      src="assets/img/biriyaniboss.png"
-                      alt="Briyani Boss Logo"
-                    />
-                  </a>
-                </div>
-
-                <p style="color: white">
-                  Briyani Boss, located in Madipakkam, serves authentic and
-                  aromatic biryani crafted with handpicked spices and premium
-                  ingredients. Every bite delivers the rich taste of tradition
-                  and quality.
-                </p>
-
-                <div class="social-icon d-flex align-items-center">
-                  <a href="https://www.facebook.com/" target="_blank"
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-
-                  <a href="https://www.instagram.com/" target="_blank"
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-
-                  <a href="https://x.com/" target="_blank"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-
-                  <a href="https://in.linkedin.com/" target="_blank"
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-2 col-md-6 col-sm-6">
-              <div class="footer-col">
-                <div class="footer-titel position-relative">
-                  <h2>Menu</h2>
-                </div>
-
-                <div class="footer-menu">
-                  <a href="index.html">Home</a>
-
-                  <a href="#about">About Us</a>
-
-                  <a href="#contact">Reservation</a>
-
-                  <a href="#blog">Blogs</a>
-
-                  <a href="#contact">Contact</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="footer-col">
-                <div class="footer-titel position-relative">
-                  <h2>Find Us</h2>
-                </div>
-
-                <div class="footer-contact">
-                  <ul class="d-flex align-items-center">
-                    <li><i class="fas fa-phone-alt"></i></li>
-
-                    <li><a href="tel:+918098333345">+91 8098333345</a></li>
-                  </ul>
-
-                  <ul class="d-flex align-items-center">
-                    <li><i class="fas fa-at"></i></li>
-
-                    <li>
-                      <a href="mailto:contact.biriyaniboss@gmail.com"
-                        >contact.biriyaniboss@gmail.com</a
-                      >
-                    </li>
-                  </ul>
-
-                  <ul class="d-flex m-0">
-                    <li><i class="fas fa-map-marker-alt"></i></li>
-
-                    <li>
-                      <a href="https://maps.google.com/" target="_blank"
-                        >Plot No-1548A, Ram Nagar South 13th Main Road,
-                        Madipakkam, Chennai - 600091</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- Why Choose Content End -->
         </div>
 
-        <div class="footer-copyright">
-          <div class="bottom-text d-flex justify-content-center">
-            <p style="color: white">
-              © Copyright 2025 - briyaniboss - All Rights Reserved
+        <div class="col-lg-6">
+          <!-- Why Choose Image Start -->
+          <div class="why-choose-image">
+            <!-- Why Choose Img Box Start -->
+            <div class="why-choose-img-box-1">
+              <div class="why-choose-img-1">
+                <figure class="image-anime reveal">
+                  <img src="images/why-choose-image-1.jpg" alt="" />
+                </figure>
+              </div>
+
+              <div class="why-choose-img-2">
+                <figure class="image-anime reveal">
+                  <img src="images/why-choose-image-2.jpg" alt="" />
+                </figure>
+              </div>
+            </div>
+            <!-- Why Choose Img Box End -->
+
+            <!-- Why Choose Img Box Start -->
+            <div class="why-choose-img-box-2">
+              <div class="why-choose-img-3">
+                <figure class="image-anime reveal">
+                  <img src="images/why-choose-image-3.jpg" alt="" />
+                </figure>
+              </div>
+
+              <div class="why-choose-img-4">
+                <figure class="image-anime reveal">
+                  <img src="images/why-choose-image-4.jpg" alt="" />
+                </figure>
+              </div>
+            </div>
+            <!-- Why Choose Img Box End -->
+
+            <!-- Contact Now Circle Start -->
+            <div class="contact-now-circle">
+              <a href="contact.html#contactForm"><img src="images/contact-us-circle.png" alt="" /></a>
+            </div>
+            <!-- Contact Now Circle End -->
+          </div>
+          <!-- Why Choose Image End -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Why Choose Us Section End -->
+  <div class="our-journey">
+    <div class="container">
+      <div class="row section-row">
+        <div class="col-lg-12">
+          <!-- Section Title -->
+          <div class="section-title section-title-center">
+            <div class="section-bg-title">
+              <span>franchise support</span>
+            </div>
+            <h3>Unrivaled Support</h3>
+            <h2>Your Success is <span>Our Mission</span></h2>
+            <p class="pt-20">
+              At FITNESS FOUR, we offer an unparalleled end-to-end support
+              system designed to guide you through every stage of your
+              entrepreneurial journey. Our dedicated teams provide expertise
+              across all key areas, ensuring a seamless and profitable venture
+              for our partners.
             </p>
+          </div>
+
+          <!-- Grid Layout -->
+          <div class="support-grid">
+            <!-- Card 1 -->
+            <div class="support-card">
+              <div class="card-header">
+                <img src="images/icon-journey-1.png" alt="Pre-Opening Icon" />
+                <h3>1. Pre-Opening & Infrastructure Development</h3>
+              </div>
+              <ul>
+                <li>Strategic location and lease negotiation assistance.</li>
+                <li>
+                  Architectural & interior design blueprints aligned with our
+                  brand.
+                </li>
+                <li>
+                  Guidance in sourcing and installing world-class fitness
+                  equipment.
+                </li>
+                <li>
+                  Comprehensive infrastructure setup: fit-outs, electrical,
+                  AC, lighting, plumbing, and more.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="support-card">
+              <div class="card-header">
+                <img src="images/icon-journey-2.png" alt="HR Icon" />
+                <h3>2. Human Resources & Staffing Solutions</h3>
+              </div>
+              <ul>
+                <li>Support in determining ideal team structure.</li>
+                <li>
+                  Help in recruiting qualified trainers, sales staff, club
+                  managers, and nutritionists.
+                </li>
+                <li>
+                  Comprehensive staff training programs covering sales,
+                  customer service, and operational protocols.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="support-card">
+              <div class="card-header">
+                <img src="images/icon-journey-3.png" alt="Sales Icon" />
+                <h3>3. Sales & Membership Management</h3>
+              </div>
+              <ul>
+                <li>
+                  Implementation and training on advanced sales & subscription
+                  management software.
+                </li>
+                <li>
+                  Ready-to-use branded membership forms and streamlined
+                  onboarding process.
+                </li>
+                <li>
+                  Dedicated pre- and post-sales support to boost member
+                  conversions and retention.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="support-card">
+              <div class="card-header">
+                <img src="images/icon-journey-4.png" alt="Marketing Icon" />
+                <h3>4. Marketing & Financial Facilitation</h3>
+              </div>
+              <ul>
+                <li>
+                  Initial 3-month marketing support including Facebook,
+                  Instagram & Google ads.
+                </li>
+                <li>
+                  Provision of branded collateral (stationery, forms, assets).
+                </li>
+                <li>
+                  Support with MSME registration, bank loans, and EMI setups
+                  for customers.
+                </li>
+                <li>
+                  Assistance in availing government subsidies where eligible.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </div>
 
-    <!-- End of Footer section -->
+  <!-- Our Faqs Section Start -->
+  <div class="our-faqs light-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <!-- Faq Image Start -->
+          <div class="faq-image">
+            <div class="faq-img-1">
+              <figure class="image-anime reveal">
+                <img src="images/faq-img-1.jpg" alt="" />
+              </figure>
+            </div>
 
-    <!-- Back to top -->
+            <div class="faq-img-2">
+              <figure class="image-anime">
+                <img src="images/faq-img-2.jpg" alt="" />
+              </figure>
+            </div>
+          </div>
+          <!-- Faq Image End -->
+        </div>
+        <div class="col-lg-6">
+          <!-- Faqs Content Start -->
+          <div class="faqs-content">
+            <!-- Section Title Start -->
+            <div class="section-title section-title-center">
+              <div class="section-bg-title wow fadeInUp">
+                <span>faqs</span>
+              </div>
+              <h3 class="wow fadeInUp" data-wow-delay="0.2s">
+                Frequently Asked Questions
+              </h3>
+              <h2 class="text-anime-style-2" data-cursor="-opaque">
+                Answers to your <span>most common</span> questions
+              </h2>
+            </div>
+            <!-- Section Title End -->
 
-    <a
-      href="javascript:void(0)"
-      class="scroll-top d-flex align-items-center justify-content-center active"
-      ><i class="fa fa-angle-up" aria-hidden="true"></i
-    ></a>
+            <!-- FAQ Accordion Start -->
+            <div class="faq-accordion" id="accordion">
+              <!-- FAQ Item Start -->
+              <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
+                <h2 class="accordion-header" id="heading1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+                    aria-expanded="true" aria-controls="collapse1">
+                    What is FITNESS FOUR?
+                  </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1"
+                  data-bs-parent="#accordion">
+                  <div class="accordion-body">
+                    <p>
+                      FITNESS FOUR is a forward-thinking gym brand by Fuel and
+                      Flex Private Limited, built upon Deshna Group’s 20+
+                      years of excellence in fitness, salon, and beauty
+                      ventures. It brings cutting-edge fitness to everyone,
+                      everywhere.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- FAQ Item End -->
 
-    <!--End Back to top -->
+              <!-- FAQ Item Start -->
+              <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
+                <h2 class="accordion-header" id="heading2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                    What makes FITNESS FOUR a unique franchise opportunity?
+                  </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                  data-bs-parent="#accordion">
+                  <div class="accordion-body">
+                    <p>
+                      FITNESS FOUR is designed to help salaried professionals
+                      become successful entrepreneurs through a scalable
+                      business model, operational support, and a strong legacy
+                      from Deshna Group.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- FAQ Item End -->
 
-    <!-- JS Files -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const form = document.getElementById("bookingForm");
+              <!-- FAQ Item Start -->
+              <div class="accordion-item wow fadeInUp" data-wow-delay="0.8s">
+                <h2 class="accordion-header" id="heading3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                    What kind of support will I receive as a franchisee?
+                  </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                  data-bs-parent="#accordion">
+                  <div class="accordion-body">
+                    <p>
+                      You'll receive complete pre-opening and post-opening
+                      support, including site selection, interior design,
+                      equipment procurement, staff recruitment, training,
+                      marketing, financial assistance, and more.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- FAQ Item End -->
 
-        form.addEventListener("submit", async (e) => {
-          e.preventDefault();
+              <!-- FAQ Item Start -->
+              <div class="accordion-item wow fadeInUp" data-wow-delay="1s">
+                <h2 class="accordion-header" id="heading4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    Do I need prior experience in fitness or business to own a
+                    franchise?
+                  </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                  data-bs-parent="#accordion">
+                  <div class="accordion-body">
+                    <p>
+                      No prior experience is required. FITNESS FOUR provides
+                      all necessary training and guidance to help you launch
+                      and manage your business successfully.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- FAQ Item End -->
 
-          // Get form data
-          const formData = new FormData(form);
-          const data = Object.fromEntries(formData.entries());
+              <!-- FAQ Item Start -->
+              <div class="accordion-item wow fadeInUp" data-wow-delay="1.2s">
+                <h2 class="accordion-header" id="heading5">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                    How can I get started with a FITNESS FOUR franchise?
+                  </button>
+                </h2>
+                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                  data-bs-parent="#accordion">
+                  <div class="accordion-body">
+                    <p>
+                      Simply click on “Explore the Opportunity” or submit a
+                      Franchise Inquiry. Our team will reach out to guide you
+                      through the onboarding and evaluation process.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- FAQ Item End -->
+            </div>
+            <!-- FAQ Accordion End -->
+          </div>
+          <!-- Faqs Content End -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Our Faqs Section End -->
 
-          // Optional: log data
-          console.log(data);
+  <!-- Our Faqs Section End -->
 
-          try {
-            // Send data using Axios
-            const response = await axios.post(
-              "https://briyani-boss.vercel.app/form",
-              data
-            );
+  <!-- Scrolling Ticker Section Start -->
+  <div class="our-scrolling-ticker">
+    <!-- Scrolling Ticker Start -->
+    <div class="scrolling-ticker-box">
+      <div class="scrolling-content">
+        <span><img src="images/star-icon.svg" alt="" />personal trainers</span>
+        <span><img src="images/star-icon.svg" alt="" />live classes</span>
+        <span><img src="images/star-icon.svg" alt="" />outdoor & online
+          trainers</span>
+        <span><img src="images/star-icon.svg" alt="" />personal training</span>
+        <span><img src="images/star-icon.svg" alt="" />live classes</span>
+        <span><img src="images/star-icon.svg" alt="" />personal trainers</span>
+        <span><img src="images/star-icon.svg" alt="" />personal trainers</span>
+        <span><img src="images/star-icon.svg" alt="" />live classes</span>
+        <span><img src="images/star-icon.svg" alt="" />outdoor & online
+          trainers</span>
+        <span><img src="images/star-icon.svg" alt="" />personal training</span>
+        <span><img src="images/star-icon.svg" alt="" />live classes</span>
+        <span><img src="images/star-icon.svg" alt="" />personal trainers</span>
+      </div>
 
-            console.log("Success:", response.data);
+      <div class="scrolling-content">
+        <span><img src="images/star-icon.svg" alt="" />personal trainers</span>
+        <span><img src="images/star-icon.svg" alt="" />live classes</span>
+        <span><img src="images/star-icon.svg" alt="" />outdoor & online
+          trainers</span>
+        <span><img src="images/star-icon.svg" alt="" />personal training</span>
+        <span><img src="images/star-icon.svg" alt="" />live classes</span>
+        <span><img src="images/star-icon.svg" alt="" />personal trainers</span>
+        <span><img src="images/star-icon.svg" alt="" />personal trainers</span>
+        <span><img src="images/star-icon.svg" alt="" />live classes</span>
+        <span><img src="images/star-icon.svg" alt="" />outdoor & online
+          trainers</span>
+        <span><img src="images/star-icon.svg" alt="" />personal training</span>
+        <span><img src="images/star-icon.svg" alt="" />live classes</span>
+        <span><img src="images/star-icon.svg" alt="" />personal trainers</span>
+      </div>
+    </div>
+    <!-- Scrolling Ticker End -->
+  </div>
+  <!-- Scrolling Ticker Section End -->
 
-            // Show success SweetAlert
-            Swal.fire({
-              icon: "success",
-              title: "Booking Confirmed!",
-              text: "Your table has been booked successfully.",
-              confirmButtonColor: "#3085d6",
-            });
+  <!-- Page Contact Us End -->
 
-            // Optionally, reset form
-            form.reset();
-          } catch (error) {
-            console.error("Error:", error);
+  <!-- Google Map Section Start -->
+  <!-- <div class="google-map">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="google-map-iframe">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96737.10562045308!2d-74.08535042841811!3d40.739265258395164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1703158537552!5m2!1sen!2sin"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- Footer Main Start -->
+  <footer class="footer-main light-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <!-- About Footer start -->
+          <div class="about-footer">
+            <!-- Footer Logo Start -->
+            <div class="footer-logo">
+              <img src="images/logo.svg" alt="" />
+            </div>
+            <!-- Footer Logo End -->
 
-            // Show error SweetAlert
-            Swal.fire({
-              icon: "error",
-              title: "Booking Failed",
-              text: "Something went wrong. Please try again later.",
-              confirmButtonColor: "#d33",
-            });
-          }
+            <!-- Footer Contact Box Start -->
+            <div class="about-footer-content">
+              <p>
+                Push harder, go further. Your fitness journey starts today!
+              </p>
+            </div>
+            <!-- Footer Contact Box End -->
+
+            <!-- Footer Newsletters Form Start -->
+            <div class="footer-newsletters-form">
+              <form id="newslettersForm" action="#" method="POST">
+                <div class="form-group">
+                  <input type="email" name="mail" class="form-control" id="mail" placeholder="Enter your email"
+                    required />
+                  <button type="submit">
+                    <img src="images/arrow-black.svg" alt="" />
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!-- Footer Newsletters Form End -->
+          </div>
+          <!-- About Footer End -->
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <!-- Footer Links Start -->
+          <div class="footer-links">
+            <h3>contact us</h3>
+
+            <!-- Footer Contact Item Start -->
+            <div class="footer-contact-item">
+              <div class="icon-box">
+                <img src="images/icon-phone.svg" alt="" />
+              </div>
+              <div class="footer-contact-content">
+                <p><a href="tel:+91123456789">+91 123 456 789</a></p>
+              </div>
+            </div>
+            <!-- Footer Contact Item End -->
+
+            <!-- Footer Contact Item Start -->
+            <div class="footer-contact-item">
+              <div class="icon-box">
+                <img src="images/icon-mail.svg" alt="" />
+              </div>
+              <div class="footer-contact-content">
+                <p>
+                  <a href="mailto:info@domainname.com">info@domainname.com</a>
+                </p>
+              </div>
+            </div>
+            <!-- Footer Contact Item End -->
+          </div>
+          <!-- Footer Links End -->
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <!-- Footer Links start -->
+          <div class="footer-links">
+            <h3>our gym timing</h3>
+            <ul>
+              <li>Mon - Fri : 08:00 AM - 10:00 PM</li>
+              <li>Sat - Sun : 08:00 AM - 09:00 PM</li>
+            </ul>
+          </div>
+          <!-- Footer Links end -->
+        </div>
+
+        <div class="col-lg-3 col-md-12">
+          <!-- Footer Links start -->
+          <div class="footer-links">
+            <h3>our location</h3>
+            <ul>
+              <li>2715 Ash Dr. San Jose, South Dakota 83475</li>
+            </ul>
+          </div>
+          <!-- Footer Links end -->
+        </div>
+
+        <div class="col-lg-12">
+          <!-- Footer Copyright Section Start -->
+          <div class="footer-copyright">
+            <!-- Footer Copyright Start -->
+            <div class="footer-copyright-text">
+              <p>Copyright © 2025 All Rights Reserved.</p>
+            </div>
+            <!-- Footer Copyright End -->
+
+            <!-- Footer Social Link Start -->
+            <div class="footer-social-links">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                </li>
+              </ul>
+            </div>
+            <!-- Footer Social Link End -->
+          </div>
+          <!-- Footer Copyright Section End -->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const formData = {
+        firstName: document.getElementById("fname").value.trim(),
+        lastName: document.getElementById("lname").value.trim(),
+        email: document.getElementById("email").value.trim(),
+        phone: document.getElementById("phone").value.trim(),
+        message: document.getElementById("message").value.trim()
+      };
+
+      try {
+        const response = await axios.post("http://localhost:5000/form", formData);
+
+        if (response.data.success) {
+          Swal.fire({
+            icon: "success",
+            title: "Thank you!",
+            text: response.data.message
+          });
+
+          document.getElementById("contactForm").reset();
+        } else {
+          Swal.fire({
+            icon: "error",
+            title: "Oops!",
+            text: response.data.message
+          });
+        }
+      } catch (error) {
+        console.error("Form submission failed:", error);
+        Swal.fire({
+          icon: "error",
+          title: "Error",
+          text: "Something went wrong. Please try again later."
         });
-      });
-    </script>
+      }
+    });
+  </script>
 
-    <!-- ==== JQuery 3.3.1 js file==== -->
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <!-- Footer Main End -->
 
-    <!-- ==== Bootstrap js file==== -->
+  <!-- Jquery Library File -->
+  <!-- Axios CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- SweetAlert2 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <!-- ====Swiper==== -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <!-- Bootstrap js file -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Validator js file -->
+  <script src="js/validator.min.js"></script>
+  <!-- SlickNav js file -->
+  <script src="js/jquery.slicknav.js"></script>
+  <!-- Swiper js file -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <!-- Counter js file -->
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <!-- Magnific js file -->
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <!-- SmoothScroll -->
+  <script src="js/SmoothScroll.js"></script>
+  <!-- Parallax js -->
+  <script src="js/parallaxie.js"></script>
+  <!-- MagicCursor js file -->
+  <script src="js/gsap.min.js"></script>
+  <script src="js/magiccursor.js"></script>
+  <!-- Text Effect js file -->
+  <script src="js/SplitText.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
+  <!-- YTPlayer js File -->
+  <script src="js/jquery.mb.YTPlayer.min.js"></script>
+  <!-- Wow js file -->
+  <script src="js/wow.min.js"></script>
+  <!-- Main Custom js file -->
+  <script src="js/function.js"></script>
+  <script src="../../demo.awaikenthemes.com/assets/js/theme-panel.js"></script>
+</body>
 
-    <script src="assets/plugins/swiper/swiper-bundle.min.js"></script>
-
-    <!-- ====Slick-slider====-->
-
-    <script src="assets/plugins/slick/slick.min.js"></script>
-
-    <!--==== glightbox ====-->
-
-    <script src="assets/plugins/glightbox/js/glightbox.min.js"></script>
-
-    <!-- ====Aos====-->
-
-    <script src="assets/plugins/aos/aos.js"></script>
-
-    <!-- ====images loaded==== -->
-
-    <script src="assets/plugins/imagesloaded/imagesloaded.pkgd.min.js"></script>
-
-    <!-- ====isotope layout==== -->
-
-    <script src="assets/plugins/isotope-layout/isotope.pkgd.js"></script>
-
-    <!-- ==== Script js file==== -->
-
-    <script src="assets/js/script.js"></script>
-  </body>
 </html>
